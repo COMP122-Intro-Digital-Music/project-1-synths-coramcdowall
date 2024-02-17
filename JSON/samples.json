@@ -1,1 +1,20 @@
-[ ]
+[
+  {
+    "name": "Slow Xylophone",
+    "file": "samples/1xylophone-in-the-distance-outside.mp3",
+    "bpm": "120",
+    "loop": "1m"
+  },
+  {
+    "name": "Reverse Xylophone",
+    "file": "samples/2REVERSExylophone-in-the-distance-outside.mp3",
+    "bpm": "120",
+    "loop": "1m"
+  },
+  {
+    "name": "Steady Flute",
+    "file": "samples/2hellska__flute.mp3",
+    "bpm": "120",
+    "loop": "1m"
+  }
+]
