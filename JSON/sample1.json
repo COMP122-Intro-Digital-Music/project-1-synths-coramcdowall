@@ -2,7 +2,7 @@
   {
     "name": "Slow Xylophone",
     "file": "samples/1xylophone-in-the-distance-outside.mp3",
-    "bpm": "135",
-    "loop": "3m"
+    "bpm": "120",
+    "loop": "1m"
   }
 ]
