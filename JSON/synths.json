@@ -10,15 +10,7 @@
         "type": "fattriangle",
         "phase": 0,
         "partialCount": "0",
-        "partials": [
-          "0.03",
-          "0.18",
-          "0.1",
-          "0.06",
-          "0.04",
-          "0.21",
-          "0.04"
-        ],
+        "partials": [],
         "count": "3",
         "spread": "18"
       },
