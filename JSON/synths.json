@@ -1,6 +1,6 @@
 [
   {
-    "name": "Synth 1",
+    "name": "Synth1",
     "type": "Synth",
     "settings": {
       "detune": "0",
@@ -22,11 +22,11 @@
         "sustain": "0.41",
         "release": "2",
         "releaseCurve": "ripple"
-     }
-   }
- },
- {
-    "name": "Synth 2",
+      }
+    }
+  },
+  {
+    "name": "Synth2",
     "type": "Synth",
     "settings": {
       "detune": "7",
