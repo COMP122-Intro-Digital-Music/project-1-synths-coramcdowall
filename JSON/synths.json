@@ -1,6 +1,6 @@
 [
   {
-    "name": "Synth 1",
+    "name": "synth1",
     "type": "Synth",
     "settings": {
       "detune": "0",
@@ -26,7 +26,7 @@
     }
   },
   {
-    "name": "Synth 2",
+    "name": "synth2",
     "type": "Synth",
     "settings": {
       "detune": "7",
