@@ -1,6 +1,6 @@
 [
   {
-    "name": "Synth2",
+    "name": "synth2",
     "type": "Synth",
     "settings": {
       "detune": "7",
