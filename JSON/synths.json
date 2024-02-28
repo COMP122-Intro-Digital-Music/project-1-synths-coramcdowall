@@ -22,9 +22,9 @@
         "sustain": "0.41",
         "release": "2",
         "releaseCurve": "ripple"
-      }
-    }
-  },
+     }
+   }
+ },
  {
     "name": "Synth 2",
     "type": "Synth",
