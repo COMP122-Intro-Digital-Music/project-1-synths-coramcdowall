@@ -38,7 +38,7 @@
         "attack": "0.2",
         "attackCurve": "cosine",
         "decay": "0.2",
-        "decayCurve": "cosine",
+        "decayCurve": "exponential",
         "sustain": "0.2",
         "release": "0.3",
         "releaseCurve": "cosine"
