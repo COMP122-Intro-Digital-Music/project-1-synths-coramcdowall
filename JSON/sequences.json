@@ -29,5 +29,30 @@
         "vel": "1"
       }
     ]
+  },
+  {
+    "name": "Sequence 2",
+    "loop": "1m",
+    "octave": -2,
+    "sequence": [
+      {
+        "time": "0:2:0.0",
+        "pitch": "G4",
+        "dur": "8n",
+        "vel": "1"
+      },
+      {
+        "time": "0:1:1.0",
+        "pitch": "C4",
+        "dur": "4n.",
+        "vel": "1"
+      },
+      {
+        "time": "0:3:0.0",
+        "pitch": "C4",
+        "dur": "4n",
+        "vel": "1"
+      }
+    ]
   }
 ]
