@@ -1,0 +1,22 @@
+[
+  {
+    "name": "fast clap",
+    "pitch": "C4",
+    "pattern": "10"
+  },
+  {
+    "name": "slow snare",
+    "pitch": "B3",
+    "pattern": "100000"
+  },
+  {
+    "name": "kick",
+    "pitch": "A#3",
+    "pattern": "1000"
+  },
+  {
+    "name": "cymbal",
+    "pitch": "E4",
+    "pattern": "10000000"
+  }
+]
