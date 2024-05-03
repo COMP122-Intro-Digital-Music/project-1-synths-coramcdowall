@@ -1,1 +1,58 @@
-[ ]
+[
+  {
+    "name": "Sequence 1",
+    "loop": "2:2:3.3",
+    "octave": -2,
+    "sequence": [
+      {
+        "time": "0:2:3.3",
+        "pitch": "D4",
+        "dur": "2n",
+        "vel": "1"
+      },
+      {
+        "time": "0:1:2.0",
+        "pitch": "F4",
+        "dur": "8n.",
+        "vel": "1"
+      },
+      {
+        "time": "1:1:2.9",
+        "pitch": "A4",
+        "dur": "4n",
+        "vel": "1"
+      },
+      {
+        "time": "2:0:0.0",
+        "pitch": "C4",
+        "dur": "4n",
+        "vel": "1"
+      }
+    ]
+  },
+  {
+    "name": "Sequence 2",
+    "loop": "1m",
+    "octave": -2,
+    "sequence": [
+      {
+        "time": "0:2:0.0",
+        "pitch": "G4",
+        "dur": "8n",
+        "vel": "1"
+      },
+      {
+        "time": "0:1:1.0",
+        "pitch": "C4",
+        "dur": "4n.",
+        "vel": "1"
+      },
+      {
+        "time": "0:3:0.0",
+        "pitch": "C4",
+        "dur": "4n",
+        "vel": "1"
+      }
+    ]
+  }
+]

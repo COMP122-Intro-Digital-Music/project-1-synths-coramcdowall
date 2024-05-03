@@ -1,7 +1,10 @@
 /**
 * Make a sequence player interface with Tone.js and P5.js
 * July 16, 2023
+* New sequence interface for spring 2024 (March)
+* added synth menu April 1, 2024
 */
+
 let sequencePromise = loadSequenceData("JSON/sequences.json")
 
 // read in the JSON file with sampler meta-data
@@ -10,7 +13,8 @@ async function loadSequenceData(file) {
   const text = await response.text(); 
   try {
     let obj = JSON.parse(text); // if JSON is valid, make an object
-    makeSeqPlayer(obj); // generate Markov player and GUI
+    // generate sequence player and GUI; set up synth menu
+    createSynthMenu(makeSeqPlayer(obj));
     return obj;
   } 
   catch (error){
@@ -23,6 +27,7 @@ async function loadSequenceData(file) {
 }
 
 function makeSeqPlayer(obj){
+  let synthSketches = [];
   //document.getElementById("sequences").innerHTML = JSON.stringify(obj);
   if(Array.isArray(obj)){
     for(let i = 0; i < obj.length; i++){
@@ -45,9 +50,36 @@ function makeSeqPlayer(obj){
       s.appendChild(sel); // add the menu to the div
       d.appendChild(s); // add the div to the player parent div
 */      
-      sketch.setObj(obj[i]); // hand a refernce to the sequence to the sketch
+      sketch.setObj(obj[i]); // hand a reference to the sequence to the sketch
+      synthSketches.push(sketch); // add to the array
     } 
-  }  
+  }
+  return synthSketches; // return an array of sequence P5 sketches
+
+}
+
+function createSynthMenu(sketches){
+  let menu = document.getElementById("seqSynthMenu");
+  if(Array.isArray(synthLibrary)){
+    console.log("create synth menu for sequences");
+    for(let i = 0; i < synthLibrary.length; i++){
+      let o = document.createElement('option');
+      o.text = synthLibrary[i].name;
+      o.value = i;
+      menu.add(o);
+    }
+    menu.addEventListener('change', (e) =>{
+      if(Array.isArray(sketches)){
+        for(let i = 0; i < sketches.length; i++){
+          sketches[i].setSynth(synthLibrary[e.target.value].synth);
+          // console.log("change synth")
+          // console.log(synthLibrary[e.target.value].name);
+        }
+      }
+    })
+  }
+  
+
 }
 
 function playSequence(seq, instrument) {
